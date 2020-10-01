@@ -17,7 +17,7 @@ const APIDataComponent = ({
     margin: 10,
     nav: true,
     dots: true,
-    dotsContainer:true,
+    dotsContainer: true,
     responsive: {
       0: {
         items: 1
@@ -32,13 +32,13 @@ const APIDataComponent = ({
   };
   return (
     <>
-      <div class="CustomComponent">
-        <div class="CustomComponent__componentcontent">
-          <div class="CustomComponent__cardlist my-5">
-            <div class="container">
-              <div class="row">
-                <div class="section-title feature mb-5 CustomComponent__componentcontent--whitecolor">
-                  <h1 class="field-title">{heading}</h1>
+      <div className="CustomComponent">
+        <div className="CustomComponent__componentcontent">
+          <div className="CustomComponent__cardlist my-5">
+            <div className="container">
+              <div className="row">
+                <div className="section-title feature mb-5 CustomComponent__componentcontent--whitecolor">
+                  <h1 className="field-title">{heading}</h1>
                 </div>
                 <React.Fragment>
                   <div style={{ overflow: "hidden" }}>
@@ -48,20 +48,21 @@ const APIDataComponent = ({
                         : apiData.slice(0, 10).map((item, i) => {
                             return (
                               <div
-                                class="item col-lg-3 col-md-3 col-xs-3"
+                                key={i}
+                                className="item col-lg-3 col-md-3 col-xs-3"
                                 style={{ margin: "16px" }}
                               >
-                                <div class="CustomComponent__cardlist--Parent">
-                                  <div class="cardlist__card d-flex flex-column">
+                                <div className="CustomComponent__cardlist--Parent">
+                                  <div className="cardlist__card d-flex flex-column">
                                     <img
-                                      class="cardlist__card__thumb d-flex justify-content-center"
+                                      className="cardlist__card__thumb d-flex justify-content-center"
                                       src={imgSrc}
                                     />
-                                    <div class="cardlist__card__info">
-                                      <div class="cardlist__card__info__title field-title">
+                                    <div className="cardlist__card__info">
+                                      <div className="cardlist__card__info__title field-title">
                                         {titlefromAPI}
                                       </div>
-                                      <div class="cardlist__card__info__description field-description">
+                                      <div className="cardlist__card__info__description field-description">
                                         {desc}
                                       </div>
                                     </div>

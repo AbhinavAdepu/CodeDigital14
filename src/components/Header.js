@@ -35,35 +35,35 @@ const Header = props => {
   });
   return (
     <>
-      <div class="menu cf">
-        <a href="#" class="menu__trigger js-trigger">
-          <i id="icon_menu" class="ion-navicon-round"></i>
+      <div className="menu cf">
+        <a href="#" className="menu__trigger js-trigger">
+          <i id="icon_menu" className="ion-navicon-round"></i>
         </a>
 
-        <div class="logoblock">
-          <a class="logoblock__centerlogo" href="/" tabindex="-1">
+        <div className="logoblock">
+          <a className="logoblock__centerlogo" href="/" tabIndex="-1">
             <img src={logo} alt="ABCD" />
           </a>
         </div>
-        <div class="logoblock-right"></div>
+        <div className="logoblock-right"></div>
       </div>
-      <div class="menu__dropdown cf js-menu">
-        <div class="menu__col">
-          <ul class="menu__row">
-            <li class="menu__list">
-              <a href="#" class="menu__link">
+      <div className="menu__dropdown cf js-menu">
+        <div className="menu__col">
+          <ul className="menu__row">
+            <li className="menu__list">
+              <a href="#" className="menu__link">
                 Menu 1
               </a>
             </li>
 
-            <li class="menu__list">
-              <a href="#" class="menu__link">
+            <li className="menu__list">
+              <a href="#" className="menu__link">
                 Menu 2
               </a>
             </li>
 
-            <li class="menu__list">
-              <a href="#" class="menu__link">
+            <li className="menu__list">
+              <a href="#" className="menu__link">
                 Menu 3
               </a>
             </li>

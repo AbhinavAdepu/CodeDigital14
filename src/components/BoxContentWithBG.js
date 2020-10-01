@@ -5,10 +5,10 @@ import ButtonBEM from "./ButtonBEM";
 const BoxContentWithBG = ({ imgSrc = bg, upperText, lowerText }) => {
   return (
     <>
-      <div class="boxblock">
-        <img class="boxblock__imgresponsive" src={imgSrc} alt="header image" />
-        <div class="boxblock__imgtitle">
-          <div class="boxblock__displayText">{upperText}</div>
+      <div className="boxblock">
+        <img className="boxblock__imgresponsive" src={imgSrc} alt="header image" />
+        <div className="boxblock__imgtitle">
+          <div className="boxblock__displayText">{upperText}</div>
           <ButtonBEM />
           <div>{lowerText}</div>
         </div>

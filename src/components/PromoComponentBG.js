@@ -8,18 +8,18 @@ const PromoComponentBG = ({
 }) => {
   return (
     <>
-      <div class="container class-component">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="container class-component">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="section-title mb-5 col-md-12">
-                    <h1 class="field-title field-title">HEADING HERE</h1>
+      <div className="container class-component">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="container class-component">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="section-title mb-5 col-md-12">
+                    <h1 className="field-title field-title">HEADING HERE</h1>
                   </div>
                   <div className="promo-wrap">
                     <div
-                      class="Promo-Bg Promo-section"
+                      className="Promo-Bg Promo-section"
                       style={{
                         backgroundImage: "url(`${promo}`)",
                         minHeight: "253px"
@@ -27,21 +27,21 @@ const PromoComponentBG = ({
                     >
                       <img src={promo} alt="sample text" />
                     </div>
-                    <div class="Promo-section offset-lg-1 row">
-                      <div class="col-lg-9">
-                        <div class="field-description">
+                    <div className="Promo-section offset-lg-1 row">
+                      <div className="col-lg-9">
+                        <div className="field-description">
                           <p>{COMMON_CONSTANTS.mainText}</p>
 
                           <p>{lowerText}</p>
                         </div>
                       </div>
-                      <div class="col-lg-2 col-12 offset-lg-1 light clearfix field-link">
+                      <div className="col-lg-2 col-12 offset-lg-1 light clearfix field-link">
                         <div>
                           <a
-                            class="button button--large button--white  button--withouticon d-inline-flex align-items-center justify-content-center"
+                            className="button button--large button--white  button--withouticon d-inline-flex align-items-center justify-content-center"
                             href="#"
                           >
-                            <img src={ArrowRight} class="icon-arrow-right" />
+                            <img src={ArrowRight} className="icon-arrow-right" />
                           </a>
                         </div>
                       </div>
